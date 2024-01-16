@@ -22,4 +22,4 @@ class CounterClass extends React.Component{
         )
     }
 }
-export default CounterClass
+export default CounterClass;
