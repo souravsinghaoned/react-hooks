@@ -18,6 +18,10 @@ class MouseListener extends React.Component{
         window.addEventListener("mousemove",this.logMousePosition)
     }
 
+    componentWillUnmount(){
+        console.log("this is from componentWillUnmount")
+        window.removeEventListener("mousemove",this.logMousePosition)
+    }
     render(){
         return(
             <div>

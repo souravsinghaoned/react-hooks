@@ -24,9 +24,7 @@ class CounterClass extends React.Component{
         // console.log(prevState)
     }
 
-    componentWillUnmount(){
-        console.log("this is from componentWillUnmount")
-    }
+   
 
     incrementCount = ()=>{
         this.setState({

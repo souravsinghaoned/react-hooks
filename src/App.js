@@ -7,17 +7,19 @@ import HookCounterTwo from './components/HookCounterTwo';
 import HookEffect from './components/HookEffect';
 import HookMouse from './components/HookMouse';
 import HookWithObject from './components/HookWithObject';
+import MouseContainer from './components/MouseContainer';
 function App() {
   return (
     <div className="App">
-      <CounterClass/>
+      {/* <CounterClass/>
       <HookCounter/>
       <HookCounterTwo/>
       <HookWithObject/>
       <HookArray/>
       <HookEffect/>
-      <MouseListener/>
-      <HookMouse/>
+      <MouseListener/> */}
+      {/* <HookMouse/> */}
+      <MouseContainer/>
     </div>
   );
 }
