@@ -1,21 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { UserContext } from "../App";
+import { ChannelContext } from "../App";
+
+
 
 function ComponentC() {
-
+    const user = useContext(UserContext)
+    const channel = useContext(ChannelContext)
     return (
         <div>
-            <UserContext.Consumer>
-                {
-                    user =>{
-                        return(
-                            <div>
-                                This is {user} from component C.
-                            </div>
-                        )
-                    }
-                }
-            </UserContext.Consumer>
+            user - {user}, channel - {channel}
         </div>
     )
 }

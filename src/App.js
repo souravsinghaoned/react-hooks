@@ -12,6 +12,8 @@ import HookWithObject from './components/HookWithObject';
 import MouseContainer from './components/MouseContainer';
 
 export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,9 @@ function App() {
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
       <UserContext.Provider value={'sourav'}>
-        <ComponentA />
+        <ChannelContext.Provider value={"Codevolution"}>
+          <ComponentA />
+        </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
