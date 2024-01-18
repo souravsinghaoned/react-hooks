@@ -1,5 +1,6 @@
 import './App.css';
 import CounterClass from './components/ClassComponents';
+import HookArray from './components/HookArray';
 import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookWithObject from './components/HookWithObject';
@@ -10,6 +11,7 @@ function App() {
       <HookCounter/>
       <HookCounterTwo/>
       <HookWithObject/>
+      <HookArray/>
     </div>
   );
 }
