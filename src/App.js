@@ -1,6 +1,8 @@
+import React from 'react';
 import './App.css';
 import CounterClass from './components/ClassComponents';
 import MouseListener from './components/ClassMouseListener';
+import ComponentA from './components/ComponentA';
 import HookArray from './components/HookArray';
 import HookCounter from './components/HookCounter';
 import HookCounterTwo from './components/HookCounterTwo';
@@ -8,6 +10,8 @@ import HookEffect from './components/HookEffect';
 import HookMouse from './components/HookMouse';
 import HookWithObject from './components/HookWithObject';
 import MouseContainer from './components/MouseContainer';
+
+export const UserContext = React.createContext()
 function App() {
   return (
     <div className="App">
@@ -19,7 +23,10 @@ function App() {
       <HookEffect/>
       <MouseListener/> */}
       {/* <HookMouse/> */}
-      <MouseContainer/>
+      {/* <MouseContainer/> */}
+      <UserContext.Provider value={'sourav'}>
+        <ComponentA />
+      </UserContext.Provider>
     </div>
   );
 }
