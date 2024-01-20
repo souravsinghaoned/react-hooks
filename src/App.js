@@ -18,6 +18,7 @@ import ComponentP from './components/ComponentP';
 import ComponentR from './components/ComponentR';
 import ComponentQ from './components/ComponentQ';
 import DataFatchingOne from './components/DataFatchingOne';
+import DataFatchingTwo from './components/DataFatchingTwo';
 
 
 export const UserContext = React.createContext()
@@ -68,6 +69,7 @@ function App() {
         <ComponentR />
       </CountContext.Provider> */}
       <DataFatchingOne/>
+      <DataFatchingTwo/>
     </div>
   );
 }
