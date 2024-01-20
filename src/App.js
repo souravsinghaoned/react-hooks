@@ -10,6 +10,8 @@ import HookEffect from './components/HookEffect';
 import HookMouse from './components/HookMouse';
 import HookWithObject from './components/HookWithObject';
 import MouseContainer from './components/MouseContainer';
+import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -26,11 +28,13 @@ function App() {
       <MouseListener/> */}
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
-      <UserContext.Provider value={'sourav'}>
+      {/* <UserContext.Provider value={'sourav'}>
         <ChannelContext.Provider value={"Codevolution"}>
           <ComponentA />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <CounterOne/>
+      <CounterTwo/>
     </div>
   );
 }
